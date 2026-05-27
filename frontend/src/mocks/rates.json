@@ -1,0 +1,25 @@
+{
+  "rates": [
+    {
+      "pair": "USDT_NGN",
+      "current": 1610,
+      "change_24h": 1.2,
+      "direction": "up",
+      "7d_average": 1625,
+      "sparkline": [1595, 1600, 1608, 1602, 1615, 1609, 1610],
+      "signal": "WAIT",
+      "signal_reason": "Rate is trending upward. 7-day average is ₦1,625. Holding 2–3 days could be worthwhile."
+    },
+    {
+      "pair": "BTC_NGN",
+      "current": 85000000,
+      "change_24h": 3.2,
+      "direction": "up",
+      "7d_average": 82000000,
+      "sparkline": [81000000, 81500000, 80000000, 83000000, 84000000, 84500000, 85000000],
+      "signal": "HOT",
+      "signal_reason": "Strong upward momentum over the last 48 hours."
+    }
+  ],
+  "last_updated": "2026-06-06T10:00:00Z"
+}

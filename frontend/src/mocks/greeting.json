@@ -1,0 +1,8 @@
+{
+  "greeting": "Good morning! BTC is up 3.2% today. The USDT/Naira rate is currently ₦1,610 — slightly better than your last swap. Tap below to act.",
+  "rates": {
+    "BTC_NGN": 85000000,
+    "USDT_NGN": 1610
+  },
+  "last_updated": "2026-06-06T08:00:00Z"
+}

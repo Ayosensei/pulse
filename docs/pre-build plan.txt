@@ -1,0 +1,69 @@
+Phase 1 — Foundation (Do this first, everyone blocked until it's done)
+Ayooluwa + Jubril
+
+Finalize all 9 Stitch prompts and generate screens
+Import into Figma, apply tokens and handoff spec
+Agree on final component library and design system
+Export all assets and icons
+
+Memeshi + Femi
+
+Set up the shared GitHub repo with agreed folder structure
+Agree on API contracts from the MD doc
+Set up the project stack — React app (Vite or Next.js), FastAPI or Node server, Python bot skeleton
+Get CoinGecko API working and returning live data
+Get Claude/OpenAI API key set up and returning responses
+
+Everyone
+
+Read the Telegram Mini Apps docs together, specifically initData, sendData, and how to launch a Web App from a bot button
+Agree on the mock data structure so Ayooluwa can build UI without waiting for live endpoints
+
+
+Phase 2 — Parallel Build (Everyone works independently)
+Ayooluwa
+
+Build the Mini App shell — routing, nav bar, screen transitions
+Build all 9 screens using mock data
+Screens in priority order: Home → Rate Pulse Feed → Smart Swap → Assets → Alert Manager → AI Chat → Profile/Settings → Onboarding
+
+Jubril
+
+Deliver Figma assets screen by screen in the same priority order so Ayooluwa is never waiting
+Final polish pass on all screens once Ayooluwa flags any design gaps during build
+
+Memeshi
+
+Build and test the alert engine — polls CoinGecko, fires Telegram messages
+Build and test the Smart Swap engine — monitors rates, executes swap via test environment
+Integrate AI API — greeting generation, rate signals, chat responses, swap analysis
+
+Femi
+
+Build all API endpoints one by one, test each with Postman before handing to Ayooluwa
+Endpoints in priority order: /rates → /greeting → /chat → /smart-swap → /assets → /alerts → /profile
+
+
+Phase 3 — Integration (Ayooluwa + Femi lead)
+
+Replace mock data in the Mini App with live API calls one screen at a time
+Start with Rate Pulse Feed (simplest data flow) and end with Smart Swap (most complex)
+Fix any contract mismatches between frontend expectations and API responses
+Memeshi connects the Python bot engines to Femi's API layer
+
+
+Phase 4 — End-to-End Testing (Everyone)
+
+Full user flow walkthrough — onboarding through to a completed smart swap
+Test proactive alerts firing in Telegram
+Test Smart Swap executing and notifying
+Test AI assistant responses for quality and speed
+Fix bugs, edge cases, and loading states
+
+
+Phase 5 — Demo Polish (Ayooluwa leads)
+
+Identify the exact happy path for the 5-minute demo
+Make sure that specific path is flawless — no loading glitches, no broken states
+Prepare a pre-triggered Smart Swap notification as a fallback in case live demo timing is unpredictable
+Rehearse the demo script as a team at least twice

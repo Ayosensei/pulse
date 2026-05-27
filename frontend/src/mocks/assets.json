@@ -1,0 +1,29 @@
+{
+  "total_balance_ngn": 2847500,
+  "total_change_24h": 34200,
+  "total_change_pct": 1.21,
+  "wallets": [
+    {
+      "coin": "BTC",
+      "balance": 0.032,
+      "balance_ngn": 2720000,
+      "change_24h_pct": 3.2,
+      "direction": "up"
+    },
+    {
+      "coin": "USDT",
+      "balance": 80,
+      "balance_ngn": 128800,
+      "change_24h_pct": 1.2,
+      "direction": "up"
+    },
+    {
+      "coin": "NGN",
+      "balance": 87500,
+      "balance_ngn": 87500,
+      "change_24h_pct": 0,
+      "direction": "flat"
+    }
+  ],
+  "last_updated": "2026-06-06T10:00:00Z"
+}
