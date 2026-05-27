@@ -1,29 +1,38 @@
 {
-  "total_balance_ngn": 2847500,
-  "total_change_24h": 34200,
-  "total_change_pct": 1.21,
+  "total_balance_ngn": "2,847,500",
+  "total_change_today": "+₦34,200 today",
   "wallets": [
     {
-      "coin": "BTC",
-      "balance": 0.032,
-      "balance_ngn": 2720000,
-      "change_24h_pct": 3.2,
-      "direction": "up"
+      "id": "btc",
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "network": "",
+      "balance": "0.024 BTC",
+      "fiat_value": "₦1,680,000"
     },
     {
-      "coin": "USDT",
-      "balance": 80,
-      "balance_ngn": 128800,
-      "change_24h_pct": 1.2,
-      "direction": "up"
+      "id": "usdt",
+      "name": "Tether",
+      "symbol": "USDT",
+      "network": "TRC20",
+      "balance": "450.00 USDT",
+      "fiat_value": "₦675,000"
     },
     {
-      "coin": "NGN",
-      "balance": 87500,
-      "balance_ngn": 87500,
-      "change_24h_pct": 0,
-      "direction": "flat"
+      "id": "usd",
+      "name": "US Dollar",
+      "symbol": "USD",
+      "network": "",
+      "balance": "$215.00",
+      "fiat_value": "₦322,500"
+    },
+    {
+      "id": "ngn",
+      "name": "Naira",
+      "symbol": "NGN",
+      "network": "Fiat",
+      "balance": "₦170,000",
+      "fiat_value": "Available"
     }
-  ],
-  "last_updated": "2026-06-06T10:00:00Z"
+  ]
 }
