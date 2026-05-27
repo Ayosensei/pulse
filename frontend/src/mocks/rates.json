@@ -1,25 +1,34 @@
 {
   "rates": [
     {
-      "pair": "USDT_NGN",
-      "current": 1610,
-      "change_24h": 1.2,
+      "id": "1",
+      "pair": "USDT / NGN",
+      "price": "₦1,610",
+      "change": "1.2%",
       "direction": "up",
-      "7d_average": 1625,
-      "sparkline": [1595, 1600, 1608, 1602, 1615, 1609, 1610],
-      "signal": "WAIT",
-      "signal_reason": "Rate is trending upward. 7-day average is ₦1,625. Holding 2–3 days could be worthwhile."
+      "signal": "HOT",
+      "insight": "Rate is at a 24h high. High volume detected.",
+      "sparkline": [1580, 1585, 1582, 1590, 1588, 1595, 1592, 1600, 1598, 1610]
     },
     {
-      "pair": "BTC_NGN",
-      "current": 85000000,
-      "change_24h": 3.2,
+      "id": "2",
+      "pair": "BTC / NGN",
+      "price": "₦102.4M",
+      "change": "0.5%",
+      "direction": "down",
+      "signal": "WAIT",
+      "insight": "Consolidating near major support level.",
+      "sparkline": [103.5, 103.2, 103.4, 102.8, 102.9, 102.4, 102.5, 102.2, 102.3, 102.4]
+    },
+    {
+      "id": "3",
+      "pair": "USD / NGN",
+      "price": "₦1,580",
+      "change": "0.1%",
       "direction": "up",
-      "7d_average": 82000000,
-      "sparkline": [81000000, 81500000, 80000000, 83000000, 84000000, 84500000, 85000000],
-      "signal": "HOT",
-      "signal_reason": "Strong upward momentum over the last 48 hours."
+      "signal": "HOLD",
+      "insight": "Volatility expected soon. Monitoring market.",
+      "sparkline": [1578, 1579, 1577, 1580, 1579, 1581, 1580, 1578, 1579, 1580]
     }
-  ],
-  "last_updated": "2026-06-06T10:00:00Z"
+  ]
 }
