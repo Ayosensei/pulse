@@ -49,7 +49,7 @@ export default function Home() {
             <Activity size={16} /> Rates
           </Button>
         </Link>
-        <Link to="/profile" className="flex-1">
+        <Link to="/alerts" className="flex-1">
           <Button variant="secondary" className="w-full gap-2">
             <Bell size={16} /> Alerts
           </Button>

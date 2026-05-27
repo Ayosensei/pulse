@@ -8,6 +8,7 @@ import Swap from './pages/Swap';
 import Assets from './pages/Assets';
 import Profile from './pages/Profile';
 import Onboarding from './pages/Onboarding';
+import Alerts from './pages/Alerts';
 
 function App() {
   useEffect(() => {
@@ -31,6 +32,7 @@ function App() {
           <Route path="swap" element={<Swap />} />
           <Route path="assets" element={<Assets />} />
           <Route path="profile" element={<Profile />} />
+          <Route path="alerts" element={<Alerts />} />
         </Route>
       </Routes>
     </BrowserRouter>

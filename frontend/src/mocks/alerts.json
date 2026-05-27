@@ -1,0 +1,24 @@
+{
+  "active": [
+    {
+      "id": "1",
+      "pair": "USDT/NGN",
+      "condition": "Above ₦1,650",
+      "direction": "up"
+    },
+    {
+      "id": "2",
+      "pair": "BTC/USD",
+      "condition": "Below $62,000",
+      "direction": "down"
+    }
+  ],
+  "triggered": [
+    {
+      "id": "3",
+      "pair": "ETH/USD",
+      "condition": "Above $3,500",
+      "timeAgo": "2 hours ago"
+    }
+  ]
+}
