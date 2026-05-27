@@ -11,8 +11,14 @@ import Onboarding from './pages/Onboarding';
 
 function App() {
   useEffect(() => {
-    WebApp.ready();
-    WebApp.expand();
+    if (WebApp && typeof WebApp.ready === 'function') {
+      try {
+        WebApp.ready();
+        WebApp.expand();
+      } catch (error) {
+        console.warn('WebApp initialization failed (likely running outside Telegram)', error);
+      }
+    }
   }, []);
 
   return (
