@@ -1,11 +1,11 @@
 {
-  "display_name": "Ayooluwa",
-  "username": "@ayooluwa",
-  "kyc_status": "verified",
-  "referral_code": "PULSE-AYO",
+  "display_name": "John Doe",
+  "username": "@johndoe_pulse",
+  "kyc_status": "Verified",
+  "referral_code": "PULSE2024",
   "settings": {
     "proactive_alerts": true,
-    "smart_swap_notifications": true,
-    "rate_pulse_updates": false
+    "smart_swap_notifications": false,
+    "rate_pulse_updates": true
   }
 }
