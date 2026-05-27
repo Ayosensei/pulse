@@ -19,9 +19,11 @@ export default function Home() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-[var(--spacing-3)]">
-          <div className="w-[40px] h-[40px] rounded-[var(--radius-full)] bg-[var(--color-purple-primary)] flex items-center justify-center">
-            <span className="text-xl">🤖</span>
-          </div>
+          <Link to="/chat" className="shrink-0">
+            <div className="w-[40px] h-[40px] rounded-[var(--radius-full)] bg-[var(--color-purple-primary)] flex items-center justify-center hover:opacity-90 transition-opacity cursor-pointer">
+              <span className="text-xl">🤖</span>
+            </div>
+          </Link>
           <div>
             <h2 className="heading-lg text-[var(--color-text-primary)]">SwiftyEx Pulse</h2>
             <p className="body-sm text-[var(--color-text-secondary)]">Your AI Market Companion</p>

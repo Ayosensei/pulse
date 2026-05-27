@@ -1,0 +1,25 @@
+{
+  "messages": [
+    {
+      "id": "1",
+      "sender": "user",
+      "text": "Should I swap my USDT to Naira now?",
+      "timestamp": "10:42 AM",
+      "read": true
+    },
+    {
+      "id": "2",
+      "sender": "ai",
+      "text": "The current USDT/NGN rate is at a 24-hour high of ₦1,610, which is 1.2% better than your last swap. It might be a favorable time if you need liquidity.",
+      "highlights": ["₦1,610", "1.2% better"],
+      "action": {
+        "label": "Initiate Swap",
+        "to": "/swap"
+      }
+    }
+  ],
+  "quickActions": [
+    "Show wallet balance",
+    "Latest crypto news"
+  ]
+}

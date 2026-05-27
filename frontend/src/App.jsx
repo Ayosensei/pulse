@@ -9,6 +9,7 @@ import Assets from './pages/Assets';
 import Profile from './pages/Profile';
 import Onboarding from './pages/Onboarding';
 import Alerts from './pages/Alerts';
+import Chat from './pages/Chat';
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/onboarding" element={<Onboarding />} />
+        <Route path="/chat" element={<Chat />} />
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="rates" element={<Rates />} />
