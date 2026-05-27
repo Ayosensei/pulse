@@ -24,7 +24,7 @@ export default function Chat() {
   };
 
   return (
-    <div className="flex flex-col w-full h-screen bg-[var(--color-bg)] text-[var(--color-text-primary)] relative max-w-[480px] mx-auto overflow-hidden">
+    <div className="flex flex-col w-full h-full text-[var(--color-text-primary)] relative">
       {/* Header */}
       <div className="flex items-center justify-between px-4 py-3 border-b border-[var(--color-border)] shrink-0 z-10 bg-[var(--color-bg)]">
         <div className="flex items-center gap-3">
@@ -92,7 +92,7 @@ export default function Chat() {
       </div>
 
       {/* Input Area */}
-      <div className="absolute bottom-0 w-full px-4 pb-safe bg-gradient-to-t from-[var(--color-bg)] via-[var(--color-bg)] to-transparent pt-8">
+      <div className="fixed bottom-[64px] w-full max-w-[480px] px-4 pb-2 bg-gradient-to-t from-[var(--color-bg)] via-[var(--color-bg)] to-transparent pt-8">
         {/* Quick Actions */}
         <div className="flex gap-2 mb-3 overflow-x-auto no-scrollbar pb-1">
           {data.quickActions.map(action => (

@@ -1,10 +1,11 @@
 import { NavLink } from 'react-router-dom';
-import { Home, Wallet, Activity, ArrowLeftRight, User } from 'lucide-react';
+import { Home, Wallet, Activity, ArrowLeftRight, User, Zap } from 'lucide-react';
 
 export default function BottomNav() {
   const navItems = [
     { to: '/', icon: Home, label: 'Home' },
     { to: '/assets', icon: Wallet, label: 'Assets' },
+    { to: '/chat', icon: Zap, label: 'Pulse' },
     { to: '/rates', icon: Activity, label: 'Rates' },
     { to: '/swap', icon: ArrowLeftRight, label: 'Swap' },
     { to: '/profile', icon: User, label: 'Profile' },

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Bell, Activity, ArrowLeftRight } from 'lucide-react';
+import { Bell, Activity, ArrowLeftRight, Zap } from 'lucide-react';
 import greetingData from '../mocks/greeting.json';
 import Card from '../components/ui/Card';
 import Button from '../components/ui/Button';
@@ -20,8 +20,8 @@ export default function Home() {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-[var(--spacing-3)]">
           <Link to="/chat" className="shrink-0">
-            <div className="w-[40px] h-[40px] rounded-[var(--radius-full)] bg-[var(--color-purple-primary)] flex items-center justify-center hover:opacity-90 transition-opacity cursor-pointer">
-              <span className="text-xl">🤖</span>
+            <div className="w-[40px] h-[40px] rounded-[var(--radius-full)] bg-[var(--color-purple-primary)] flex items-center justify-center hover:opacity-90 transition-opacity cursor-pointer shadow-[var(--shadow-glow)]">
+              <Zap size={20} className="text-white" fill="currentColor" />
             </div>
           </Link>
           <div>

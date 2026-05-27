@@ -27,9 +27,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/onboarding" element={<Onboarding />} />
-        <Route path="/chat" element={<Chat />} />
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="chat" element={<Chat />} />
           <Route path="rates" element={<Rates />} />
           <Route path="swap" element={<Swap />} />
           <Route path="assets" element={<Assets />} />
