@@ -7,6 +7,7 @@ import Rates from './pages/Rates';
 import Swap from './pages/Swap';
 import Assets from './pages/Assets';
 import Profile from './pages/Profile';
+import Onboarding from './pages/Onboarding';
 
 function App() {
   useEffect(() => {
@@ -17,6 +18,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/onboarding" element={<Onboarding />} />
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="rates" element={<Rates />} />
