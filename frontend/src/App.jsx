@@ -13,6 +13,12 @@ import Chat from './pages/Chat';
 
 function App() {
   useEffect(() => {
+    // Theme setup
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+      document.documentElement.classList.add('light');
+    }
+
     if (WebApp && typeof WebApp.ready === 'function') {
       try {
         WebApp.ready();

@@ -16,10 +16,13 @@ import {
 import profileData from '../mocks/profile.json';
 import Card from '../components/ui/Card';
 
-const Switch = ({ checked }) => (
-  <div className={`w-[46px] h-[26px] rounded-full p-[3px] transition-colors duration-200 ease-in-out flex items-center ${checked ? 'bg-[var(--color-purple-light)]' : 'bg-[var(--color-surface-3)]'}`}>
+const Switch = ({ checked, onChange }) => (
+  <button 
+    onClick={onChange}
+    className={`w-[46px] h-[26px] rounded-full p-[3px] transition-colors duration-200 ease-in-out flex items-center ${checked ? 'bg-[var(--color-purple-light)]' : 'bg-[var(--color-surface-3)]'}`}
+  >
     <div className={`w-5 h-5 rounded-full bg-white shadow-sm transition-transform duration-200 ease-in-out ${checked ? 'translate-x-[20px]' : 'translate-x-0'}`} />
-  </div>
+  </button>
 );
 
 const SettingsGroup = ({ title, children }) => (
@@ -33,8 +36,11 @@ const SettingsGroup = ({ title, children }) => (
   </div>
 );
 
-const SettingsItem = ({ icon: Icon, label, rightElement, isDestructive, hideBorder }) => (
-  <div className={`flex items-center justify-between py-3.5 ${hideBorder ? '' : 'border-b border-[var(--color-border)]/50'}`}>
+const SettingsItem = ({ icon: Icon, label, rightElement, isDestructive, hideBorder, onClick }) => (
+  <div 
+    onClick={onClick}
+    className={`flex items-center justify-between py-3.5 cursor-pointer transition-all duration-200 hover:opacity-70 active:scale-[0.98] ${hideBorder ? '' : 'border-b border-[var(--color-border)]/50'}`}
+  >
     <div className="flex items-center gap-4">
       <div className={`w-[38px] h-[38px] rounded-xl flex items-center justify-center ${isDestructive ? 'text-[var(--color-danger)] bg-[var(--color-danger)]/10' : 'bg-[var(--color-surface)] text-[var(--color-text-secondary)] border border-[var(--color-border)]'}`}>
         <Icon size={18} />
@@ -51,10 +57,24 @@ const SettingsItem = ({ icon: Icon, label, rightElement, isDestructive, hideBord
 
 export default function Profile() {
   const [data, setData] = useState(null);
+  const [isLightMode, setIsLightMode] = useState(false);
 
   useEffect(() => {
     setData(profileData);
+    setIsLightMode(document.documentElement.classList.contains('light'));
   }, []);
+
+  const toggleTheme = () => {
+    if (isLightMode) {
+      document.documentElement.classList.remove('light');
+      localStorage.setItem('theme', 'dark');
+      setIsLightMode(false);
+    } else {
+      document.documentElement.classList.add('light');
+      localStorage.setItem('theme', 'light');
+      setIsLightMode(true);
+    }
+  };
 
   if (!data) return null;
 
@@ -146,9 +166,12 @@ export default function Profile() {
           <SettingsItem 
             icon={Moon} 
             label="Appearance" 
+            onClick={toggleTheme}
             rightElement={
               <div className="flex items-center gap-2">
-                <span className="text-[14px] text-[var(--color-text-secondary)] font-medium">Dark Mode</span>
+                <span className="text-[14px] text-[var(--color-text-secondary)] font-medium">
+                  {isLightMode ? 'Light Mode' : 'Dark Mode'}
+                </span>
                 <ChevronRight size={20} className="text-[var(--color-text-tertiary)]" />
               </div>
             } 
