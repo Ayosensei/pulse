@@ -44,7 +44,7 @@ export default function Chat() {
       </div>
 
       {/* Chat Area */}
-      <div className="flex-1 overflow-y-auto p-4 flex flex-col gap-6 pb-[140px] no-scrollbar">
+      <div className="flex-1 overflow-y-auto p-4 flex flex-col gap-6 pb-[140px] no-scrollbar animate-fade-in-up">
         <div className="flex justify-center">
           <span className="bg-[var(--color-surface-2)] text-[var(--color-text-secondary)] text-[12px] px-3 py-1 rounded-full font-medium">
             Today
