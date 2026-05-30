@@ -68,7 +68,7 @@ export default function Profile() {
         </div>
       </div>
 
-      <div className="flex flex-col p-[var(--spacing-4)]">
+      <div className="flex flex-col p-[var(--spacing-4)] animate-fade-in-up">
         {/* Profile Info */}
         <div className="flex flex-col items-center justify-center mt-6 mb-4 relative">
           <div className="w-[100px] h-[100px] rounded-full bg-[var(--color-purple-primary)] shadow-[var(--shadow-glow)] flex items-center justify-center relative z-10">

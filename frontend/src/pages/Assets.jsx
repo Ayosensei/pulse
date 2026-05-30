@@ -62,7 +62,7 @@ export default function Assets() {
         </div>
       </div>
 
-      <div className="flex flex-col p-[var(--spacing-4)] gap-[var(--spacing-5)]">
+      <div className="flex flex-col p-[var(--spacing-4)] gap-[var(--spacing-5)] animate-fade-in-up">
         {/* Total Balance Card */}
         <div className="bg-[var(--color-surface-2)] border border-[var(--color-border)] rounded-[var(--radius-lg)] p-5 relative overflow-hidden shadow-sm">
           {/* Subtle background glow */}

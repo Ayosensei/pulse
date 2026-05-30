@@ -37,7 +37,7 @@ export default function Swap() {
         </button>
       </div>
 
-      <div className="flex flex-col p-[var(--spacing-4)] gap-[var(--spacing-6)]">
+      <div className="flex flex-col p-[var(--spacing-4)] gap-[var(--spacing-6)] animate-fade-in-up">
         {/* Token Selector Card */}
         <Card className="flex items-center justify-between py-[var(--spacing-5)] px-6 relative overflow-hidden">
           {/* Left Token */}
@@ -72,12 +72,12 @@ export default function Swap() {
         <div className="bg-[var(--color-surface-2)] rounded-r-[var(--radius-md)] rounded-l-[4px] border-l-[3px] border-l-[var(--color-purple-primary)] p-5 flex flex-col gap-4 shadow-sm relative overflow-hidden">
           {/* Subtle background glow */}
           <div className="absolute top-0 left-0 w-[120px] h-[120px] bg-[var(--color-purple-primary)]/15 blur-[40px] pointer-events-none" />
-          
+
           <div className="flex items-center gap-2 relative z-10">
             <Sparkles size={16} className="text-[var(--color-purple-light)]" />
             <span className="label tracking-[0.1em] text-[var(--color-purple-light)] font-bold">PULSE AI INSIGHTS</span>
           </div>
-          
+
           <div className="flex flex-col gap-3.5 relative z-10 mt-1">
             <div className="flex items-center justify-between">
               <span className="text-[15px] text-[var(--color-text-secondary)]">Best window:</span>
@@ -87,7 +87,7 @@ export default function Swap() {
               <span className="text-[15px] text-[var(--color-text-secondary)]">Suggested target:</span>
               <span className="font-mono text-[16px] font-bold text-[var(--color-success)]">₦{data.suggested_target.toLocaleString()}</span>
             </div>
-            
+
             <div className="flex flex-col gap-2 mt-3">
               <div className="flex items-center justify-between">
                 <span className="text-[13px] font-bold text-[var(--color-text-primary)]">Execution Confidence</span>
@@ -109,7 +109,7 @@ export default function Swap() {
             <label className="text-[14px] font-bold text-[var(--color-text-primary)]">Amount to swap</label>
             <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-[var(--radius-md)] p-[18px] flex items-center justify-between focus-within:border-[var(--color-purple-light)] transition-colors group">
               <span className="font-mono text-[16px] font-bold text-[var(--color-text-secondary)] w-16 group-focus-within:text-[var(--color-text-primary)] transition-colors">USDT</span>
-              <input 
+              <input
                 type="number"
                 placeholder="0.00"
                 value={amount}
@@ -131,7 +131,7 @@ export default function Swap() {
             <label className="text-[14px] font-bold text-[var(--color-text-primary)]">My target rate</label>
             <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-[var(--radius-md)] p-[18px] flex items-center justify-between focus-within:border-[var(--color-purple-light)] transition-colors group">
               <span className="font-mono text-[18px] font-bold text-[var(--color-text-secondary)] w-8 group-focus-within:text-[var(--color-text-primary)] transition-colors">₦</span>
-              <input 
+              <input
                 type="text"
                 value={targetRate}
                 onChange={(e) => setTargetRate(e.target.value)}

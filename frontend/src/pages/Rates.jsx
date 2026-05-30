@@ -73,7 +73,7 @@ export default function Rates() {
   if (!data) return null;
 
   return (
-    <div className="flex flex-col p-[var(--spacing-4)] gap-[var(--spacing-6)] pt-6 pb-24">
+    <div className="flex flex-col p-[var(--spacing-4)] gap-[var(--spacing-6)] pt-6 pb-24 animate-fade-in-up">
       <div className="flex flex-col gap-1">
         <h1 className="heading-xl text-[var(--color-text-primary)]">Rate Pulse</h1>
         <p className="body-lg text-[var(--color-text-secondary)]">Live AI-driven market sentiment</p>

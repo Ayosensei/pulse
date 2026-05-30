@@ -15,7 +15,7 @@ export default function Home() {
   if (!data) return null;
 
   return (
-    <div className="flex flex-col p-[var(--spacing-4)] gap-[var(--spacing-5)] pt-6">
+    <div className="flex flex-col p-[var(--spacing-4)] gap-[var(--spacing-5)] pt-6 animate-fade-in-up">
       {/* Header */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-[var(--spacing-3)]">
